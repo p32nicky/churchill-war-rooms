@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Churchill War Rooms Tickets | The Underground Bunker That Won the War</title>
+<meta name="description" content="Book tickets to the Churchill War Rooms — the secret Whitehall bunker where Churchill ran WWII, sealed since 1945. Entry from £29.75, instant mobile tickets, rated 4.6/5.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn-imgix.headout.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300;400;500;600;700&family=Special+Elite&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --black:#0c0c0b; --black2:#141413; --bone:#e9e3d4; --paper:#ddd3bd;
+    --amber:#e8a300; --amber-dk:#c98a00; --red:#b3361f; --blue:#16263b;
+    --line:rgba(233,227,212,.18); --muted:#9a9384;
+    --mono:"Special Elite",monospace; --disp:"Anton",sans-serif;
+    --cond:"Oswald",sans-serif; --body:"Inter",system-ui,sans-serif;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--body);background:var(--black);color:var(--bone);
+    line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  img{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+
+  /* subtle vignette texture (cheap, no expensive filters) */
+  body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;
+    background:radial-gradient(120% 90% at 50% 0%,transparent 60%,rgba(0,0,0,.35) 100%)}
+
+  /* labels */
+  .tag{font-family:var(--mono);font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--amber)}
+  .disp{font-family:var(--disp);text-transform:uppercase;line-height:.92;letter-spacing:.5px}
+  .cond{font-family:var(--cond);text-transform:uppercase;letter-spacing:1px}
+
+  /* button */
+  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:600;
+    text-transform:uppercase;letter-spacing:1.5px;font-size:.95rem;
+    background:var(--amber);color:#141008;padding:15px 28px;border:2px solid var(--amber);
+    transition:.15s;position:relative}
+  .btn:hover{background:transparent;color:var(--amber)}
+  .btn.ghost{background:transparent;color:var(--bone);border-color:var(--line)}
+  .btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+  .btn .arr{transition:.15s}.btn:hover .arr{transform:translateX(4px)}
+
+  /* header */
+  header{position:sticky;top:0;z-index:100;background:rgba(12,12,11,.92);
+    backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .logo{display:flex;align-items:center;gap:12px}
+  .logo .mk{font-family:var(--disp);font-size:1.35rem;letter-spacing:1px}
+  .logo .mk b{color:var(--amber)}
+  .logo .file{font-family:var(--mono);font-size:.62rem;letter-spacing:2px;color:var(--muted);
+    border:1px solid var(--line);padding:3px 7px}
+  header nav{display:flex;gap:26px;font-family:var(--cond);font-size:.85rem;letter-spacing:1px;text-transform:uppercase}
+  header nav a{color:#c8c1b0}header nav a:hover{color:var(--amber)}
+  .hbtn{font-family:var(--cond);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;
+    font-size:.82rem;background:var(--amber);color:#141008;padding:9px 18px}
+  @media(max-width:880px){header nav{display:none}.logo .file{display:none}}
+  /* right cluster + language selector */
+  .right{display:flex;align-items:center;gap:14px}
+  .lang{position:relative}
+  .langbtn{display:flex;align-items:center;gap:7px;background:transparent;border:1px solid var(--line);
+    color:#c8c1b0;font-family:var(--cond);text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem;
+    padding:8px 12px;cursor:pointer;line-height:1}
+  .langbtn:hover{border-color:var(--amber);color:var(--amber)}
+  .langbtn svg{width:15px;height:15px;display:block}
+  .langbtn .ca{font-size:.6rem;opacity:.7}
+  .langmenu{position:absolute;top:calc(100% + 10px);right:0;background:var(--black2);
+    border:1px solid var(--line);min-width:180px;display:none;flex-direction:column;z-index:130;
+    box-shadow:0 18px 44px rgba(0,0,0,.55)}
+  .langmenu.open{display:flex}
+  .langmenu a{padding:11px 16px;font-family:var(--cond);text-transform:uppercase;letter-spacing:1px;
+    font-size:.82rem;color:#c8c1b0;cursor:pointer;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px}
+  .langmenu a:last-child{border-bottom:0}
+  .langmenu a:hover{background:rgba(232,163,0,.1);color:var(--amber)}
+  .langmenu a .ab{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+  /* neutralise google translate injected chrome */
+  .goog-te-banner-frame,.goog-te-gadget-icon,#goog-gt-tt,.goog-te-balloon-frame,.skiptranslate iframe{display:none!important}
+  body{top:0!important}
+  .goog-text-highlight{background:none!important;box-shadow:none!important}
+  #google_translate_element{position:absolute;left:-9999px;height:0;overflow:hidden}
+  @media(max-width:880px){.langbtn .lb{display:none}}
+
+  /* map */
+  .mapwrap{margin-top:34px;border:1px solid var(--line);background:var(--black2)}
+  .maphdr{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap;
+    padding:13px 18px;border-bottom:1px solid var(--line);font-family:var(--mono);font-size:.72rem;
+    letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+  .maphdr .pin{color:var(--amber);display:flex;align-items:center;gap:8px}
+  .maphdr .pin svg{width:13px;height:13px}
+  .maphdr a{color:#c8c1b0;border-bottom:1px solid var(--amber);padding-bottom:1px}
+  .maphdr a:hover{color:var(--amber)}
+  .mapwrap iframe{width:100%;height:420px;border:0;display:block}
+
+  /* HERO */
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;background:#000}
+  .hero .ph{position:absolute;inset:0}
+  .hero .ph img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.1) brightness(.6)}
+  .hero .ph::after{content:"";position:absolute;inset:0;
+    background:linear-gradient(90deg,rgba(12,12,11,.96) 0%,rgba(12,12,11,.7) 45%,rgba(12,12,11,.25) 100%),
+               linear-gradient(0deg,rgba(12,12,11,.9),transparent 55%),
+               rgba(232,163,0,.16)}
+  .hero .wrap{position:relative;z-index:3;padding:80px 26px}
+  .hero .ov{display:flex;align-items:center;gap:14px;margin-bottom:22px}
+  .hero .ov span{height:1px;width:54px;background:var(--amber)}
+  .hero h1{font-family:var(--disp);font-size:clamp(3rem,8.5vw,7rem);line-height:1.04;
+    text-transform:uppercase;max-width:15ch;text-shadow:0 4px 40px rgba(0,0,0,.6)}
+  .hero h1 em{font-style:normal;color:var(--amber);-webkit-text-stroke:0}
+  .hero .sub{font-family:var(--mono);font-size:clamp(.95rem,1.6vw,1.15rem);max-width:50ch;
+    margin:26px 0 32px;color:#d6cfbe;line-height:1.7}
+  .hero .act{display:flex;align-items:center;gap:26px;flex-wrap:wrap}
+  .hero .meta{display:flex;gap:26px;flex-wrap:wrap;font-family:var(--mono);font-size:.78rem;color:var(--muted);letter-spacing:1px}
+  .hero .meta b{color:var(--bone);font-size:1.05rem}
+  .hero .meta .amb{color:var(--amber)}
+  /* declassified stamp */
+  .stamp{position:absolute;top:14%;right:6%;z-index:4;transform:rotate(-13deg);
+    border:3px solid var(--red);color:var(--red);font-family:var(--cond);font-weight:700;
+    text-transform:uppercase;letter-spacing:3px;padding:10px 18px;opacity:.82;
+    font-size:1.05rem;text-align:center;line-height:1.1;mix-blend-mode:screen}
+  .stamp small{display:block;font-size:.6rem;letter-spacing:2px;opacity:.8;font-family:var(--mono)}
+  @media(max-width:880px){.stamp{top:auto;bottom:18%;right:6%;transform:rotate(-10deg) scale(.8)}}
+
+  /* ticker / stat bar */
+  .statbar{background:var(--amber);color:#141008;border-top:1px solid #000}
+  .statbar .wrap{display:flex;flex-wrap:wrap}
+  .statbar .s{flex:1;min-width:160px;padding:16px 0;display:flex;flex-direction:column;
+    border-left:1px solid rgba(20,16,8,.18);padding-left:18px}
+  .statbar .s:first-child{border-left:0;padding-left:0}
+  .statbar .s .k{font-family:var(--mono);font-size:.62rem;letter-spacing:2px;text-transform:uppercase;opacity:.7}
+  .statbar .s .v{font-family:var(--cond);font-weight:700;font-size:1.15rem;text-transform:uppercase}
+
+  section{padding:96px 0;position:relative}
+  .kick{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+  .kick span{height:1px;width:40px;background:var(--amber)}
+  h2.t{font-family:var(--disp);font-size:clamp(2.2rem,5.5vw,4rem);text-transform:uppercase;line-height:.92}
+  .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start;margin-top:30px}
+  .intro-grid .big{font-family:var(--cond);font-weight:300;font-size:1.5rem;line-height:1.4;color:#efe9da}
+  .intro-grid p{color:#bdb6a5;margin-bottom:16px}
+  @media(max-width:820px){.intro-grid{grid-template-columns:1fr;gap:24px}}
+
+  /* dossier index */
+  .dossier{background:var(--black2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:90px 1fr 2fr;gap:30px;align-items:baseline;
+    padding:30px 0;border-bottom:1px solid var(--line);transition:.2s}
+  .row:last-child{border-bottom:0}
+  .row:hover{background:rgba(232,163,0,.04)}
+  .row .no{font-family:var(--disp);font-size:2.4rem;color:var(--amber);line-height:1}
+  .row .nm{font-family:var(--cond);font-weight:600;font-size:1.5rem;text-transform:uppercase;letter-spacing:.5px}
+  .row .ds{color:#b3ac9b;font-size:1rem}
+  @media(max-width:760px){.row{grid-template-columns:60px 1fr;gap:14px}.row .ds{grid-column:1/-1;padding-left:74px}}
+
+  /* split blueprint */
+  .blue{background:
+    linear-gradient(rgba(22,38,59,.92),rgba(12,12,11,.96)),
+    repeating-linear-gradient(0deg,transparent,transparent 38px,rgba(120,170,220,.09) 39px),
+    repeating-linear-gradient(90deg,transparent,transparent 38px,rgba(120,170,220,.09) 39px);
+    background-color:var(--blue)}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:54px;align-items:center}
+  .split .im{position:relative}
+  .split .im img{filter:grayscale(.4) contrast(1.05);border:1px solid var(--line)}
+  .split .im .cap{position:absolute;bottom:0;left:0;background:var(--amber);color:#141008;
+    font-family:var(--mono);font-size:.66rem;letter-spacing:1px;padding:6px 12px}
+  .split p{color:#cdc6b5;margin:16px 0}
+  @media(max-width:820px){.split{grid-template-columns:1fr;gap:30px}}
+
+  /* tickets — stubs */
+  #tickets{background:var(--black)}
+  .stubs{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:26px;margin-top:40px}
+  .stub{position:relative;background:var(--bone);color:#1a1712;display:flex;flex-direction:column;
+    min-height:380px;box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .stub.pop{outline:3px solid var(--amber);outline-offset:0}
+  .stub .ribbon{position:absolute;top:0;right:0;background:var(--red);color:#fff;font-family:var(--cond);
+    font-weight:600;font-size:.66rem;letter-spacing:1.5px;text-transform:uppercase;padding:6px 12px}
+  .stub .hd{padding:26px 26px 0}
+  .stub .tno{font-family:var(--mono);font-size:.66rem;letter-spacing:2px;color:#8c8470;margin-bottom:12px}
+  .stub h3{font-family:var(--cond);font-weight:600;text-transform:uppercase;font-size:1.35rem;line-height:1.05;min-height:2.5em}
+  .stub ul{list-style:none;margin:16px 0;font-size:.9rem;color:#3e382e}
+  .stub ul li{padding:5px 0 5px 22px;position:relative}
+  .stub ul li::before{content:"›";position:absolute;left:2px;color:var(--amber-dk);font-weight:700}
+  /* perforation */
+  .stub .perf{border-top:2px dashed #b8ad92;margin:6px 0 0;position:relative}
+  .stub .perf::before,.stub .perf::after{content:"";position:absolute;top:-11px;width:20px;height:20px;
+    border-radius:50%;background:var(--black)}
+  .stub .perf::before{left:-10px}.stub .perf::after{right:-10px}
+  .stub .ft{margin-top:auto;padding:18px 26px 26px}
+  .stub .pr{font-family:var(--mono);font-size:.7rem;color:#7a7360;letter-spacing:1px;margin-bottom:12px}
+  .stub .pr b{font-family:var(--disp);font-size:2rem;color:#141008;display:block;letter-spacing:.5px}
+  .stub .btn{width:100%;justify-content:center;background:#141008;color:var(--amber);border-color:#141008}
+  .stub .btn:hover{background:var(--amber);color:#141008}
+
+  /* logbook */
+  .log{display:grid;grid-template-columns:repeat(2,1fr);gap:0;margin-top:36px;border:1px solid var(--line)}
+  .log .e{padding:22px 26px;border-bottom:1px solid var(--line);border-right:1px solid var(--line)}
+  .log .e:nth-child(2n){border-right:0}
+  .log .e .k{font-family:var(--mono);font-size:.66rem;letter-spacing:2px;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+  .log .e .v{color:#cdc6b5;font-size:.97rem}
+  @media(max-width:680px){.log{grid-template-columns:1fr}.log .e{border-right:0}}
+
+  /* faq */
+  .faq{max-width:840px}
+  details{border-bottom:1px solid var(--line)}
+  details summary{cursor:pointer;list-style:none;padding:22px 0;display:flex;gap:18px;align-items:baseline;
+    font-family:var(--cond);font-weight:500;text-transform:uppercase;letter-spacing:.5px;font-size:1.18rem}
+  details summary::-webkit-details-marker{display:none}
+  details summary .q{font-family:var(--mono);font-size:.8rem;color:var(--amber);flex:0 0 auto}
+  details summary .x{margin-left:auto;color:var(--amber);font-family:var(--disp);font-size:1.4rem;transition:.2s}
+  details[open] summary .x{transform:rotate(45deg)}
+  details .a{padding:0 0 24px 44px;color:#b3ac9b}
+
+  /* final band */
+  .band{text-align:center;background:
+    linear-gradient(rgba(12,12,11,.55),rgba(12,12,11,.92)),
+    url("https://cdn-imgix.headout.com/media/images/cf417c776b09dd778bc197804f91d0cf-2996-london-churchill-war-rooms-tickets-with-audio-guide-11.jpg?w=1600&auto=format&q=60");
+    background-size:cover;background-position:center}
+  .band h2{margin:0 auto}
+  .band p{font-family:var(--mono);color:#cdc6b5;max-width:46ch;margin:18px auto 30px}
+
+  footer{background:#080807;border-top:1px solid var(--line);padding:54px 0;font-size:.9rem;color:#8c8576}
+  footer .top{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:center;margin-bottom:26px}
+  footer .mk{font-family:var(--disp);font-size:1.5rem}footer .mk b{color:var(--amber)}
+  footer .disc{font-family:var(--mono);font-size:.72rem;line-height:1.9;color:#6e685b;
+    border-top:1px solid var(--line);padding-top:22px}
+
+  /* sticky mobile */
+  .mcta{position:fixed;bottom:0;left:0;right:0;z-index:120;background:rgba(12,12,11,.97);
+    border-top:1px solid var(--amber);padding:11px 18px;display:none;align-items:center;justify-content:space-between;gap:12px}
+  .mcta .pr{font-family:var(--mono);font-size:.74rem;color:#cdc6b5}.mcta .pr b{color:var(--amber);font-size:1.05rem}
+  @media(max-width:880px){.mcta{display:flex}body{padding-bottom:66px}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="logo">
+      <div class="mk">CHURCHILL <b>WAR ROOMS</b></div>
+      <div class="file">FILE&nbsp;NO.&nbsp;2996</div>
+    </div>
+    <nav>
+      <a href="#story">The Bunker</a>
+      <a href="#rooms">The Rooms</a>
+      <a href="#tickets">Tickets</a>
+      <a href="#visit">Visit</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="right">
+      <div class="lang">
+        <button class="langbtn" id="langBtn" aria-label="Select language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+          <span class="lb"><span id="langCur">EN</span></span><span class="ca">▾</span>
+        </button>
+        <div class="langmenu" id="langMenu">
+          <a data-lang="en"  data-abbr="EN">English <span class="ab">EN</span></a>
+          <a data-lang="fr"  data-abbr="FR">Français <span class="ab">FR</span></a>
+          <a data-lang="de"  data-abbr="DE">Deutsch <span class="ab">DE</span></a>
+          <a data-lang="es"  data-abbr="ES">Español <span class="ab">ES</span></a>
+          <a data-lang="it"  data-abbr="IT">Italiano <span class="ab">IT</span></a>
+          <a data-lang="nl"  data-abbr="NL">Nederlands <span class="ab">NL</span></a>
+          <a data-lang="pt"  data-abbr="PT">Português <span class="ab">PT</span></a>
+          <a data-lang="zh-CN" data-abbr="中文">中文 <span class="ab">ZH</span></a>
+        </div>
+      </div>
+      <a class="hbtn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web" target="_blank" rel="noopener sponsored">Book Tickets</a>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="ph"><img src="https://cdn-imgix.headout.com/media/images/47cb3542205faa13760fc7b256ac89c7-23804-london-westminster-walking-tour---churchill-s-war-rooms-entrance-01.jpg?w=1900&auto=format&q=70" alt="Entrance to the Churchill War Rooms, Westminster"></div>
+  <div class="stamp">Declassified<small>1984 · WESTMINSTER</small></div>
+  <div class="wrap">
+    <div class="ov"><span></span><div class="tag">Whitehall · London · Est. 1939</div></div>
+    <h1>The Bunker<br>That Ran<br>The <em>War</em></h1>
+    <p class="sub">Three storeys below Whitehall, Churchill and his War Cabinet directed the fight against Hitler — then locked the door in 1945 and left everything exactly where it lay. The maps. The phones. The cigarette in the ashtray.</p>
+    <div class="act">
+      <a class="btn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web" target="_blank" rel="noopener sponsored">Book Your Entry <span class="arr">→</span></a>
+      <div class="meta">
+        <div>ADMISSION<br><b class="amb">£29.75</b></div>
+        <div>RATED<br><b>4.6</b> / 5</div>
+        <div>FROM<br><b>771</b> visitors</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="statbar">
+  <div class="wrap">
+    <div class="s"><span class="k">Tickets</span><span class="v">Mobile — Skip the Desk</span></div>
+    <div class="s"><span class="k">Audio Guide</span><span class="v">Included, 9 Languages</span></div>
+    <div class="s"><span class="k">Confirmation</span><span class="v">Instant Options</span></div>
+    <div class="s"><span class="k">Duration</span><span class="v">1.5 – 2 Hours</span></div>
+  </div>
+</div>
+
+<!-- STORY -->
+<section id="story">
+  <div class="wrap">
+    <div class="kick"><span></span><div class="tag">The Site</div></div>
+    <h2 class="t">An Underground<br>Time Capsule</h2>
+    <div class="intro-grid">
+      <div class="big">When the bombs fell on London in 1940, Britain's government didn't run. It went underground — into a reinforced basement beneath the Treasury that became the secret nerve-centre of the entire war.</div>
+      <div>
+        <p>From this warren of cramped, map-lined rooms, Churchill broadcast to the nation, took scrambled calls with President Roosevelt from a converted broom cupboard, and chaired the meetings that decided the war's direction.</p>
+        <p>When peace came in 1945, the staff switched off the lights and walked out. The rooms sat sealed for decades. Today every detail survives — preserved alongside the immersive Churchill Museum, the definitive collection on the man himself.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROOMS / DOSSIER -->
+<section class="dossier" id="rooms">
+  <div class="wrap">
+    <div class="kick"><span></span><div class="tag">Dossier · What's Down There</div></div>
+    <h2 class="t">Five Rooms<br>History Held Its Breath In</h2>
+    <div style="margin-top:46px">
+      <div class="row"><div class="no">01</div><div class="nm">The Map Room</div><div class="ds">Manned every minute of the war. The original wall maps are still studded with the pinholes that tracked convoys across the Atlantic, night after night.</div></div>
+      <div class="row"><div class="no">02</div><div class="nm">The Cabinet War Room</div><div class="ds">Where Churchill chaired more than 100 wartime cabinet meetings. His chair still sits at the head of the table — its arms scored by his ring during the tensest debates.</div></div>
+      <div class="row"><div class="no">03</div><div class="nm">Churchill's Bedroom</div><div class="ds">The PM's private quarters: his bed, desk, and the BBC microphone he used to broadcast some of the most famous speeches of the 20th century.</div></div>
+      <div class="row"><div class="no">04</div><div class="nm">The Transatlantic Hotline</div><div class="ds">Disguised as Churchill's private toilet, this closet hid the scrambled telephone that connected the bunker directly to the White House.</div></div>
+      <div class="row"><div class="no">05</div><div class="nm">The Churchill Museum</div><div class="ds">An award-winning, interactive museum tracing his entire life — soldier, writer, statesman, wartime leader — through speeches, letters and personal effects.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SPLIT -->
+<section class="blue">
+  <div class="wrap split">
+    <div>
+      <div class="kick"><span></span><div class="tag">Authentic · Not a Reconstruction</div></div>
+      <h2 class="t" style="font-size:clamp(2rem,4.5vw,3.2rem)">Frozen<br>Since 1945</h2>
+      <p>Almost nothing here is a replica. These are the actual desks, telephones, typewriters and bunk beds used by the hundreds of staff who lived underground — sometimes for weeks without daylight.</p>
+      <p>A free audio guide walks you room by room with first-hand accounts from the people who were there. There's no time limit once you're inside.</p>
+      <a class="btn ghost" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web" target="_blank" rel="noopener sponsored">Check Availability <span class="arr">→</span></a>
+    </div>
+    <div class="im">
+      <img src="https://cdn-imgix.headout.com/media/images/aec244ea2e74e7cbd59a348a6168c6e4-2996-london-churchill-war-rooms-tickets-with-audio-guide-05.jpg?w=1000&auto=format&q=72" alt="Wartime desk with vintage telephones inside the Churchill War Rooms">
+      <div class="cap">MAP ROOM · ORIGINAL FITTINGS</div>
+    </div>
+  </div>
+</section>
+
+<!-- TICKETS -->
+<section id="tickets">
+  <div class="wrap">
+    <div class="kick"><span></span><div class="tag">Admission</div></div>
+    <h2 class="t">Choose Your Ticket</h2>
+    <p style="color:#b3ac9b;margin-top:14px;max-width:60ch">Every option includes the underground rooms and the Churchill Museum, delivered as a mobile ticket. Live prices and timed-entry slots are confirmed at checkout.</p>
+    <div class="stubs">
+
+      <div class="stub pop">
+        <div class="ribbon">Most Booked</div>
+        <div class="hd">
+          <div class="tno">TICKET · 2996–A</div>
+          <h3>Entry + Audio Guide</h3>
+          <ul>
+            <li>Full access to the War Rooms</li>
+            <li>Churchill Museum included</li>
+            <li>Free audio guide, 9 languages</li>
+            <li>Instant mobile ticket</li>
+          </ul>
+        </div>
+        <div class="perf"></div>
+        <div class="ft">
+          <div class="pr">Adult, from <b>£29.75</b></div>
+          <a class="btn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_card1" target="_blank" rel="noopener sponsored">Book Now →</a>
+        </div>
+      </div>
+
+      <div class="stub">
+        <div class="hd">
+          <div class="tno">TICKET · 2996–B</div>
+          <h3>Entry + Political London Audio Tour</h3>
+          <ul>
+            <li>Everything in the entry ticket</li>
+            <li>Self-guided audio walk of Whitehall</li>
+            <li>Downing St &amp; Westminster</li>
+            <li>Best-value combo</li>
+          </ul>
+        </div>
+        <div class="perf"></div>
+        <div class="ft">
+          <div class="pr">Combo · <b>See live price</b></div>
+          <a class="btn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_card2" target="_blank" rel="noopener sponsored">View Option →</a>
+        </div>
+      </div>
+
+      <div class="stub">
+        <div class="hd">
+          <div class="tno">TICKET · 2996–C</div>
+          <h3>War Rooms + Westminster Guided Tour</h3>
+          <ul>
+            <li>Live expert guide</li>
+            <li>Westminster highlights walk</li>
+            <li>Skip-the-line bunker entry</li>
+            <li>Small-group experience</li>
+          </ul>
+        </div>
+        <div class="perf"></div>
+        <div class="ft">
+          <div class="pr">Guided · <b>See live price</b></div>
+          <a class="btn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_card3" target="_blank" rel="noopener sponsored">View Option →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section id="visit">
+  <div class="wrap">
+    <div class="kick"><span></span><div class="tag">Field Notes</div></div>
+    <h2 class="t">Plan Your Visit</h2>
+    <div class="log">
+      <div class="e"><div class="k">Location</div><div class="v">Clive Steps, King Charles Street, Westminster, London SW1A 2AQ</div></div>
+      <div class="e"><div class="k">Nearest Tube</div><div class="v">Westminster &amp; St James's Park — both a 2-minute walk (Jubilee, District, Circle)</div></div>
+      <div class="e"><div class="k">Opening Hours</div><div class="v">Daily 9:30am – 6:00pm · last entry 5:00pm · closed 24–26 Dec</div></div>
+      <div class="e"><div class="k">How Long</div><div class="v">Allow 1.5–2 hours · quietest first thing or late afternoon</div></div>
+      <div class="e"><div class="k">Accessibility</div><div class="v">Step-free to most areas via lift · free entry for essential companions</div></div>
+      <div class="e"><div class="k">Good to Know</div><div class="v">Timed entry — pre-book to guarantee your slot and skip the box-office queue</div></div>
+    </div>
+    <div class="mapwrap">
+      <div class="maphdr">
+        <span class="pin"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 22s7-6.5 7-12a7 7 0 1 0-14 0c0 5.5 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg>Churchill War Rooms · Clive Steps, SW1A 2AQ</span>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Churchill+War+Rooms,+Clive+Steps,+King+Charles+Street,+London+SW1A+2AQ" target="_blank" rel="noopener">Get Directions →</a>
+      </div>
+      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map showing the Churchill War Rooms location in Westminster, London"
+        src="https://www.google.com/maps?q=Churchill%20War%20Rooms%2C%20Clive%20Steps%2C%20King%20Charles%20Street%2C%20London%20SW1A%202AQ&output=embed"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="dossier" id="faq">
+  <div class="wrap">
+    <div class="kick"><span></span><div class="tag">Debrief</div></div>
+    <h2 class="t">Questions</h2>
+    <div class="faq" style="margin-top:30px">
+      <details open><summary><span class="q">Q1</span> How much are tickets? <span class="x">+</span></summary><div class="a">Standard adult entry with the audio guide starts from <b>£29.75</b>. Combo tickets that add a guided Westminster tour or political-London audio walk cost a little more — exact live prices appear when you book.</div></details>
+      <details><summary><span class="q">Q2</span> Do I need to book ahead? <span class="x">+</span></summary><div class="a">Yes. Entry is by timed slot and the popular times sell out, especially weekends and summer. Booking online locks your time and skips the ticket-office queue with a mobile ticket.</div></details>
+      <details><summary><span class="q">Q3</span> Is the audio guide included? <span class="x">+</span></summary><div class="a">Yes — a free audio guide in nine languages is included and is the best way through the rooms, with eyewitness accounts throughout.</div></details>
+      <details><summary><span class="q">Q4</span> How long should I allow? <span class="x">+</span></summary><div class="a">Most visitors spend 1.5 to 2 hours. There's no time limit inside, so history fans can easily linger longer in the Churchill Museum.</div></details>
+      <details><summary><span class="q">Q5</span> Is it good for children? <span class="x">+</span></summary><div class="a">Very — the bunker and interactive museum are family favourites. Under-5s usually go free; child and family tickets are available at checkout.</div></details>
+      <details><summary><span class="q">Q6</span> Can I cancel? <span class="x">+</span></summary><div class="a">Many options include free cancellation up to 24 hours before your visit. Check the terms on the ticket you choose before paying.</div></details>
+    </div>
+  </div>
+</section>
+
+<!-- BAND -->
+<section class="band">
+  <div class="wrap">
+    <h2 class="t" style="max-width:18ch;margin:0 auto">Go Underground</h2>
+    <p>Secure your timed entry to one of London's most powerful historic sites. Instant mobile tickets, trusted booking.</p>
+    <a class="btn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_band" target="_blank" rel="noopener sponsored">Book War Rooms Tickets <span class="arr">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="top">
+      <div class="mk">CHURCHILL <b>WAR ROOMS</b></div>
+      <nav style="display:flex;gap:22px;font-family:var(--cond);text-transform:uppercase;letter-spacing:1px;font-size:.82rem">
+        <a href="#tickets">Tickets</a><a href="#visit">Visit</a><a href="#faq">FAQ</a>
+      </nav>
+    </div>
+    <p class="disc">
+      Independent visitor guide to the Churchill War Rooms, London. This is an unofficial information website — not affiliated with, endorsed by, or operated by the Imperial War Museums. All trademarks belong to their respective owners. We participate in affiliate programmes: book through links on this page and we may earn a commission at no extra cost to you, which keeps this guide free. Prices, hours and availability are indicative — always confirm at checkout. © 2026.
+    </p>
+  </div>
+</footer>
+
+<div class="mcta">
+  <div class="pr">FROM <b>£29.75</b> · 4.6★</div>
+  <a class="hbtn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_sticky" target="_blank" rel="noopener sponsored">Book Tickets →</a>
+</div>
+
+<!-- language: styled dropdown drives a hidden Google Translate widget -->
+<div id="google_translate_element"></div>
+<script>
+  function googleTranslateElementInit(){
+    new google.translate.TranslateElement(
+      {pageLanguage:'en', includedLanguages:'en,fr,de,es,it,nl,pt,zh-CN', autoDisplay:false},
+      'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  (function(){
+    var btn=document.getElementById('langBtn'),
+        menu=document.getElementById('langMenu'),
+        cur=document.getElementById('langCur');
+    btn.addEventListener('click',function(e){e.stopPropagation();menu.classList.toggle('open');});
+    document.addEventListener('click',function(){menu.classList.remove('open');});
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        cur.textContent=a.getAttribute('data-abbr');
+        menu.classList.remove('open');
+        applyLang(a.getAttribute('data-lang'));
+      });
+    });
+    function applyLang(code){
+      var tries=0;
+      (function go(){
+        var sel=document.querySelector('.goog-te-combo');
+        if(sel){ sel.value=code; sel.dispatchEvent(new Event('change')); }
+        else if(tries++<30){ setTimeout(go,200); }
+      })();
+    }
+  })();
+</script>
+
+</body>
+</html>
