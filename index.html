@@ -268,15 +268,14 @@
   .partners{background:var(--black2);border-top:1px solid var(--line);text-align:center}
   .partners .ptxt{font-family:var(--cond);font-weight:300;font-size:clamp(1.15rem,2.6vw,1.7rem);
     text-transform:uppercase;letter-spacing:1px;max-width:26ch;margin:18px auto 44px;line-height:1.45;color:#efe9da}
-  .plogos{display:flex;justify-content:center;align-items:center;flex-wrap:wrap}
-  .plogo{display:flex;align-items:center;gap:9px;padding:8px 46px;color:#cbc4b3;
-    font-family:var(--body);font-weight:700;font-size:1.55rem;letter-spacing:-.4px;
-    border-left:1px solid var(--line);transition:.2s;opacity:.85}
-  .plogo:first-child{border-left:0}
-  .plogo:hover{color:var(--amber);opacity:1}
-  .plogo svg{width:20px;height:20px;flex:0 0 auto}
-  .plogo.hd{font-weight:600;text-transform:lowercase;letter-spacing:0}
-  @media(max-width:660px){.plogo{border-left:0;padding:12px 22px;font-size:1.3rem}}
+  .plogos{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px}
+  .plogo{display:flex;align-items:center;justify-content:center;background:#fff;
+    border-radius:14px;height:82px;padding:16px 30px;box-shadow:0 10px 30px rgba(0,0,0,.28);
+    transition:transform .18s ease}
+  .plogo:hover{transform:translateY(-3px)}
+  .plogo img{height:100%;width:auto;max-width:180px;object-fit:contain;display:block}
+  .plogo.purple{background:#7b00ff}   /* headout logo is white-on-purple */
+  @media(max-width:660px){.plogo{height:64px;padding:12px 22px}.plogo img{max-width:140px}}
 
   /* final band */
   .band{text-align:center;background:
@@ -484,12 +483,9 @@
     <div class="kick" style="justify-content:center"><span></span><div class="tag">Book With Confidence</div><span></span></div>
     <p class="ptxt">We work only with the best partners to guarantee you a safe and reliable booking experience.</p>
     <div class="plogos">
-      <div class="plogo">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.1 2 5 5.1 5 9c0 4.9 7 13 7 13s7-8.1 7-13c0-3.9-3.1-7-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
-        GetYourGuide
-      </div>
-      <div class="plogo hd">headout</div>
-      <div class="plogo">Viator</div>
+      <div class="plogo"><img src="logos/getyourguide.png" alt="GetYourGuide" width="160" height="82"></div>
+      <div class="plogo purple"><img src="logos/headout.png" alt="Headout" width="160" height="82"></div>
+      <div class="plogo"><img src="logos/viator.png" alt="Viator" width="160" height="82"></div>
     </div>
   </div>
 </section>
