@@ -271,14 +271,17 @@
   .partners{background:var(--black2);border-top:1px solid var(--line);text-align:center}
   .partners .ptxt{font-family:var(--cond);font-weight:300;font-size:clamp(1.15rem,2.6vw,1.7rem);
     text-transform:uppercase;letter-spacing:1px;max-width:26ch;margin:18px auto 44px;line-height:1.45;color:#efe9da}
-  .plogos{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:22px}
+  .plogos{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:20px}
   .plogo{display:flex;align-items:center;justify-content:center;background:#fff;
-    border-radius:14px;height:82px;padding:16px 30px;box-shadow:0 10px 30px rgba(0,0,0,.28);
-    transition:transform .18s ease}
+    border-radius:14px;min-width:190px;height:78px;padding:0 30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.28);transition:transform .18s ease}
   .plogo:hover{transform:translateY(-3px)}
-  .plogo img{height:100%;width:auto;max-width:180px;object-fit:contain;display:block}
-  .plogo.purple{background:#7b00ff}   /* headout logo is white-on-purple */
-  @media(max-width:660px){.plogo{height:64px;padding:12px 22px}.plogo img{max-width:140px}}
+  .plogo img{width:auto;object-fit:contain;display:block}
+  .l-gyg{height:46px}
+  .l-hd{height:27px}
+  .l-tq{height:34px}
+  @media(max-width:660px){.plogo{min-width:150px;height:66px;padding:0 22px}
+    .l-gyg{height:38px}.l-hd{height:22px}.l-tq{height:28px}}
 
   /* final band */
   .band{text-align:center;background:
@@ -353,6 +356,19 @@
         <div>RATED<br><b>4.6</b> / 5</div>
         <div>FROM<br><b>771</b> visitors</div>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- PARTNERS -->
+<section class="partners">
+  <div class="wrap">
+    <div class="kick" style="justify-content:center"><span></span><div class="tag">Book With Confidence</div><span></span></div>
+    <p class="ptxt">We work only with the best partners to guarantee you a safe and reliable booking experience.</p>
+    <div class="plogos">
+      <div class="plogo"><img class="l-gyg" src="logos/getyourguide.svg" alt="GetYourGuide"></div>
+      <div class="plogo"><img class="l-hd" src="logos/headout.svg" alt="Headout"></div>
+      <div class="plogo"><img class="l-tq" src="logos/tiqets.svg" alt="Tiqets"></div>
     </div>
   </div>
 </section>
@@ -476,19 +492,6 @@
         </div>
       </div>
 
-    </div>
-  </div>
-</section>
-
-<!-- PARTNERS -->
-<section class="partners">
-  <div class="wrap">
-    <div class="kick" style="justify-content:center"><span></span><div class="tag">Book With Confidence</div><span></span></div>
-    <p class="ptxt">We work only with the best partners to guarantee you a safe and reliable booking experience.</p>
-    <div class="plogos">
-      <div class="plogo"><img src="logos/getyourguide.png" alt="GetYourGuide" width="160" height="82"></div>
-      <div class="plogo purple"><img src="logos/headout.png" alt="Headout" width="160" height="82"></div>
-      <div class="plogo"><img src="logos/viator.png" alt="Viator" width="160" height="82"></div>
     </div>
   </div>
 </section>
