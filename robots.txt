@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://churchillwarroomstours.com/sitemap.xml
