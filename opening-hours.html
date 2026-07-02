@@ -160,12 +160,16 @@
       });
     });
     function applyLang(code){
-      var tries=0;
-      (function go(){
-        var sel=document.querySelector('.goog-te-combo');
-        if(sel){ sel.value=code; sel.dispatchEvent(new Event('change')); }
-        else if(tries++<30){ setTimeout(go,200); }
-      })();
+      // google translate writes googtrans at BOTH host and .host scopes; a stale
+      // one re-translates the page on refresh. Manage both explicitly, then reload.
+      var host=location.hostname, scopes=['', ';domain='+host, ';domain=.'+host];
+      scopes.forEach(function(d){
+        document.cookie='googtrans=;path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT'+d;
+      });
+      if(code!=='en'){
+        scopes.forEach(function(d){ document.cookie='googtrans=/en/'+code+';path=/'+d; });
+      }
+      location.reload();
     }
   })();
 </script>
