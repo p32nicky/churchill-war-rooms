@@ -1,4 +1,12 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [{ "type": "host", "value": "www.churchillwarroomstours.com" }],
+      "destination": "https://churchillwarroomstours.com/$1",
+      "permanent": true
+    }
+  ]
 }
