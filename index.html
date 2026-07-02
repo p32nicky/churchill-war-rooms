@@ -597,6 +597,12 @@
     var btn=document.getElementById('langBtn'),
         menu=document.getElementById('langMenu'),
         cur=document.getElementById('langCur');
+    // restore current language from the googtrans cookie (set on any page)
+    var m=document.cookie.match(/googtrans=\/en\/([a-zA-Z-]+)/);
+    if(m&&m[1]!=='en'){
+      var sel=menu.querySelector('[data-lang="'+m[1]+'"]');
+      if(sel) cur.textContent=sel.getAttribute('data-abbr');
+    }
     btn.addEventListener('click',function(e){e.stopPropagation();menu.classList.toggle('open');});
     document.addEventListener('click',function(){menu.classList.remove('open');});
     menu.querySelectorAll('a').forEach(function(a){
