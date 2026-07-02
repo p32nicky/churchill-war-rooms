@@ -36,7 +36,24 @@
       <a href="/getting-there">Getting There</a>
       <a href="/things-to-do-near-churchill-war-rooms">Nearby</a>
     </nav>
-    <a class="hbtn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_hours" target="_blank" rel="noopener sponsored">Book Tickets</a>
+    <div class="hright">
+      <div class="lang">
+        <button class="langbtn" id="langBtn" aria-label="Select language">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 2.5 15.3 0 18M12 3c-2.5 2.7-2.5 15.3 0 18"/></svg>
+          <span class="lb"><span id="langCur">EN</span></span><span class="ca">▾</span>
+        </button>
+        <div class="langmenu" id="langMenu">
+          <a data-lang="en"  data-abbr="EN">English <span class="ab">EN</span></a>
+          <a data-lang="fr"  data-abbr="FR">Français <span class="ab">FR</span></a>
+          <a data-lang="de"  data-abbr="DE">Deutsch <span class="ab">DE</span></a>
+          <a data-lang="es"  data-abbr="ES">Español <span class="ab">ES</span></a>
+          <a data-lang="it"  data-abbr="IT">Italiano <span class="ab">IT</span></a>
+          <a data-lang="nl"  data-abbr="NL">Nederlands <span class="ab">NL</span></a>
+          <a data-lang="pt"  data-abbr="PT">Português <span class="ab">PT</span></a>
+          <a data-lang="zh-CN" data-abbr="中文">中文 <span class="ab">ZH</span></a>
+        </div>
+      </div>
+      <a class="hbtn" href="https://www.headout.com/churchill-war-rooms-tickets/churchill-war-rooms-entry-ticket-e-2996/?affiliate_code=iZXoqq&cm=web_hours" target="_blank" rel="noopener sponsored">Book Tickets</a></div>
   </div>
 </header>
 
@@ -110,5 +127,48 @@
     <p class="disc">Independent visitor guide to the Churchill War Rooms, London — not affiliated with, endorsed by, or operated by the Imperial War Museums. Booking links are affiliate links; we may earn a small commission at no extra cost to you. Hours and prices are indicative — always confirm at checkout. © 2026.</p>
   </div>
 </footer>
+
+<!-- language: styled dropdown drives a hidden Google Translate widget -->
+<div id="google_translate_element"></div>
+<script>
+  function googleTranslateElementInit(){
+    new google.translate.TranslateElement(
+      {pageLanguage:'en', includedLanguages:'en,fr,de,es,it,nl,pt,zh-CN', autoDisplay:false},
+      'google_translate_element');
+  }
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script>
+  (function(){
+    var btn=document.getElementById('langBtn'),
+        menu=document.getElementById('langMenu'),
+        cur=document.getElementById('langCur');
+    // restore current language from the googtrans cookie (set on any page)
+    var m=document.cookie.match(/googtrans=\/en\/([a-zA-Z-]+)/);
+    if(m&&m[1]!=='en'){
+      var a=menu.querySelector('[data-lang="'+m[1]+'"]');
+      if(a) cur.textContent=a.getAttribute('data-abbr');
+    }
+    btn.addEventListener('click',function(e){e.stopPropagation();menu.classList.toggle('open');});
+    document.addEventListener('click',function(){menu.classList.remove('open');});
+    menu.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click',function(e){
+        e.preventDefault();
+        cur.textContent=a.getAttribute('data-abbr');
+        menu.classList.remove('open');
+        applyLang(a.getAttribute('data-lang'));
+      });
+    });
+    function applyLang(code){
+      var tries=0;
+      (function go(){
+        var sel=document.querySelector('.goog-te-combo');
+        if(sel){ sel.value=code; sel.dispatchEvent(new Event('change')); }
+        else if(tries++<30){ setTimeout(go,200); }
+      })();
+    }
+  })();
+</script>
+
 </body>
 </html>

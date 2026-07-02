@@ -96,3 +96,33 @@ footer nav{display:flex;gap:20px;flex-wrap:wrap;margin:14px 0 22px;font-family:v
 footer nav a{color:#c8c1b0;text-decoration:none}footer nav a:hover{color:var(--amber)}
 footer .disc{font-family:var(--mono);font-size:.72rem;line-height:1.9;color:#6e685b;border-top:1px solid var(--line);padding-top:20px}
 footer .mk{font-family:var(--disp);font-size:1.3rem;text-transform:uppercase}footer .mk b{color:var(--amber)}
+
+/* language selector (same as homepage) */
+.hright{display:flex;align-items:center;gap:12px}
+.lang{position:relative}
+.langbtn{display:flex;align-items:center;gap:7px;background:transparent;border:1px solid var(--line);
+  color:#c8c1b0;font-family:var(--cond);text-transform:uppercase;letter-spacing:1.5px;font-size:.78rem;
+  padding:8px 12px;cursor:pointer;line-height:1}
+.langbtn:hover{border-color:var(--amber);color:var(--amber)}
+.langbtn svg{width:15px;height:15px;display:block}
+.langbtn .ca{font-size:.6rem;opacity:.7}
+.langmenu{position:absolute;top:calc(100% + 10px);right:0;background:var(--black2);
+  border:1px solid var(--line);min-width:180px;display:none;flex-direction:column;z-index:130;
+  box-shadow:0 18px 44px rgba(0,0,0,.55)}
+.langmenu.open{display:flex}
+.langmenu a{padding:11px 16px;font-family:var(--cond);text-transform:uppercase;letter-spacing:1px;
+  font-size:.82rem;color:#c8c1b0;cursor:pointer;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:14px;text-decoration:none}
+.langmenu a:last-child{border-bottom:0}
+.langmenu a:hover{background:rgba(232,163,0,.1);color:var(--amber)}
+.langmenu a .ab{font-family:var(--mono);font-size:.66rem;color:var(--muted)}
+/* neutralise google translate injected chrome */
+.goog-te-banner-frame,.goog-te-gadget-icon,#goog-gt-tt,.goog-te-balloon-frame,.skiptranslate iframe{display:none!important}
+body{top:0!important}
+.goog-text-highlight{background:none!important;box-shadow:none!important}
+#google_translate_element{position:absolute;left:-9999px;height:0;overflow:hidden}
+@media(max-width:820px){.langbtn .lb{display:none}}
+/* compact header when translated (text runs ~30% longer) */
+html.translated-ltr .logo a,html.translated-rtl .logo a{font-size:.95rem;letter-spacing:.5px}
+html.translated-ltr header nav,html.translated-rtl header nav{font-size:.72rem;gap:14px;letter-spacing:.5px}
+html.translated-ltr .hbtn,html.translated-rtl .hbtn{font-size:.7rem;padding:8px 12px;letter-spacing:.8px}
+html.translated-ltr .langbtn,html.translated-rtl .langbtn{font-size:.7rem;padding:7px 9px}
