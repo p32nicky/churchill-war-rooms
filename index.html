@@ -111,16 +111,22 @@
   /* header */
   header{position:sticky;top:0;z-index:100;background:rgba(12,12,11,.92);
     backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-  header .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
-  .logo{display:flex;align-items:center;gap:12px}
-  .logo .mk{font-family:var(--disp);font-size:1.35rem;letter-spacing:1px}
+  header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding-top:8px;padding-bottom:8px}
+  .logo{display:flex;align-items:center;gap:12px;min-width:0}
+  .logo .mk{font-family:var(--disp);font-size:1.35rem;letter-spacing:1px;line-height:1.05}
   .logo .mk b{color:var(--amber)}
   .logo .file{font-family:var(--mono);font-size:.62rem;letter-spacing:2px;color:var(--muted);
-    border:1px solid var(--line);padding:3px 7px}
-  header nav{display:flex;gap:26px;font-family:var(--cond);font-size:.85rem;letter-spacing:1px;text-transform:uppercase}
-  header nav a{color:#c8c1b0}header nav a:hover{color:var(--amber)}
+    border:1px solid var(--line);padding:3px 7px;white-space:nowrap}
+  header nav{display:flex;flex-wrap:wrap;gap:6px 22px;font-family:var(--cond);font-size:.85rem;letter-spacing:1px;text-transform:uppercase;justify-content:center}
+  header nav a{color:#c8c1b0;white-space:nowrap}header nav a:hover{color:var(--amber)}
   .hbtn{font-family:var(--cond);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;
-    font-size:.82rem;background:var(--amber);color:#141008;padding:9px 18px}
+    font-size:.82rem;background:var(--amber);color:#141008;padding:9px 18px;white-space:nowrap;text-align:center}
+  /* compact header when Google Translate is active (translated text runs ~30% longer) */
+  html.translated-ltr .logo .mk,html.translated-rtl .logo .mk{font-size:.95rem;letter-spacing:.5px;max-width:24vw}
+  html.translated-ltr .logo .file,html.translated-rtl .logo .file{display:none}
+  html.translated-ltr header nav,html.translated-rtl header nav{font-size:.72rem;gap:4px 14px;letter-spacing:.5px}
+  html.translated-ltr .hbtn,html.translated-rtl .hbtn{font-size:.7rem;padding:8px 12px;letter-spacing:.8px}
+  html.translated-ltr .langbtn,html.translated-rtl .langbtn{font-size:.7rem;padding:7px 9px}
   @media(max-width:880px){header nav{display:none}.logo .file{display:none}}
   @media(max-width:560px){.logo .mk{font-size:1rem;letter-spacing:.5px;max-width:52vw;line-height:1.05}
     header .wrap{height:58px}.hbtn{padding:8px 13px;font-size:.74rem}}
