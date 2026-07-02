@@ -1,0 +1,98 @@
+/* Shared styles for the Churchill War Rooms Tours guide pages.
+   Matches the homepage dossier theme. */
+:root{
+  --black:#0c0c0b; --black2:#141413; --bone:#e9e3d4; --paper:#ddd3bd;
+  --amber:#e8a300; --amber-dk:#c98a00; --red:#b3361f; --blue:#16263b;
+  --line:rgba(233,227,212,.18); --muted:#9a9384;
+  --mono:"Special Elite",monospace; --disp:"Anton",sans-serif;
+  --cond:"Oswald",sans-serif; --body:"Inter",system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);background:var(--black);color:var(--bone);line-height:1.7;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:900px;margin:0 auto;padding:0 26px}
+.wrap.wide{max-width:1120px}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:200;
+  background:radial-gradient(120% 90% at 50% 0%,transparent 60%,rgba(0,0,0,.35) 100%)}
+
+.tag{font-family:var(--mono);font-size:.72rem;letter-spacing:3px;text-transform:uppercase;color:var(--amber)}
+.cond{font-family:var(--cond);text-transform:uppercase;letter-spacing:1px}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--cond);font-weight:600;
+  text-transform:uppercase;letter-spacing:1.5px;font-size:.95rem;background:var(--amber);color:#141008;
+  padding:14px 26px;border:2px solid var(--amber);transition:.15s;text-decoration:none}
+.btn:hover{background:transparent;color:var(--amber)}
+.btn.ghost{background:transparent;color:var(--bone);border-color:var(--line)}
+.btn.ghost:hover{border-color:var(--amber);color:var(--amber)}
+.btn .arr{transition:.15s}.btn:hover .arr{transform:translateX(4px)}
+
+/* header */
+header{position:sticky;top:0;z-index:100;background:rgba(12,12,11,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header .wrap{max-width:1120px;display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo a{font-family:var(--disp);font-size:1.25rem;letter-spacing:1px;text-transform:uppercase;text-decoration:none;color:var(--bone)}
+.logo b{color:var(--amber)}
+header nav{display:flex;gap:24px;font-family:var(--cond);font-size:.84rem;letter-spacing:1px;text-transform:uppercase}
+header nav a{color:#c8c1b0;text-decoration:none}header nav a:hover,header nav a[aria-current]{color:var(--amber)}
+.hbtn{font-family:var(--cond);text-transform:uppercase;letter-spacing:1.5px;font-weight:600;font-size:.8rem;
+  background:var(--amber);color:#141008;padding:9px 16px;text-decoration:none;white-space:nowrap}
+@media(max-width:820px){header nav{display:none}.logo a{font-size:1.05rem}}
+
+/* page head */
+.pagehead{border-bottom:1px solid var(--line);padding:54px 0 40px;background:var(--black2)}
+.crumb{font-family:var(--mono);font-size:.72rem;letter-spacing:1px;color:var(--muted);margin-bottom:18px}
+.crumb a{color:var(--muted);text-decoration:none}.crumb a:hover{color:var(--amber)}
+.pagehead h1{font-family:var(--disp);text-transform:uppercase;line-height:.98;font-size:clamp(2.1rem,5.5vw,3.6rem);margin-top:8px}
+.pagehead .lede{font-family:var(--mono);color:#cdc6b5;max-width:60ch;margin-top:18px;font-size:1rem;line-height:1.7}
+
+/* article body */
+article{padding:50px 0 20px}
+article h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(1.5rem,3.5vw,2.1rem);line-height:1;margin:44px 0 16px}
+article h2:first-child{margin-top:0}
+article h3{font-family:var(--cond);font-weight:600;text-transform:uppercase;letter-spacing:.5px;font-size:1.2rem;margin:28px 0 10px}
+article p{margin:0 0 16px;color:#ded7c6}
+article ul,article ol{margin:0 0 18px 0;padding-left:0;list-style:none}
+article ul li{position:relative;padding:6px 0 6px 26px;color:#ded7c6}
+article ul li::before{content:"›";position:absolute;left:4px;color:var(--amber);font-weight:700}
+article ol{counter-reset:n}
+article ol li{position:relative;padding:8px 0 8px 40px;color:#ded7c6}
+article ol li::before{counter-increment:n;content:counter(n,decimal-leading-zero);position:absolute;left:0;
+  font-family:var(--disp);color:var(--amber);font-size:1.1rem}
+article a{color:var(--amber);text-decoration:underline;text-underline-offset:2px}
+article strong{color:#fff}
+
+/* data table */
+.dtable{width:100%;border:1px solid var(--line);border-collapse:collapse;margin:8px 0 22px;font-size:.97rem}
+.dtable th,.dtable td{text-align:left;padding:13px 16px;border-bottom:1px solid var(--line)}
+.dtable th{font-family:var(--mono);font-size:.7rem;letter-spacing:1px;text-transform:uppercase;color:var(--amber);width:42%}
+.dtable td{color:#ded7c6}
+.dtable tr:last-child th,.dtable tr:last-child td{border-bottom:0}
+
+/* tip / callout */
+.tip{border-left:3px solid var(--amber);background:var(--black2);padding:16px 20px;margin:22px 0;border-radius:0 8px 8px 0}
+.tip b{font-family:var(--cond);text-transform:uppercase;letter-spacing:1px;color:var(--amber);font-size:.85rem;display:block;margin-bottom:4px}
+.tip p{margin:0;color:#cdc6b5}
+
+/* nearby attraction cards */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px;margin:26px 0}
+.acard{background:var(--black2);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column}
+.acard .body{padding:22px}
+.acard h3{margin:0 0 8px;font-family:var(--cond);font-weight:600;text-transform:uppercase;font-size:1.2rem}
+.acard .meta{font-family:var(--mono);font-size:.74rem;color:var(--muted);letter-spacing:.5px;margin-bottom:12px}
+.acard .meta b{color:var(--bone)}.acard .meta .amb{color:var(--amber)}
+.acard p{color:#c7c0af;font-size:.95rem;margin:0 0 16px}
+.acard .btn{width:100%;justify-content:center;font-size:.85rem;padding:12px}
+
+/* CTA band */
+.band{text-align:center;background:linear-gradient(120deg,var(--blue),#20130f);padding:64px 0;margin-top:40px}
+.band h2{font-family:var(--disp);text-transform:uppercase;font-size:clamp(1.8rem,4vw,2.8rem);margin:0 auto;color:#fff}
+.band p{font-family:var(--mono);color:#cdc6b5;max-width:48ch;margin:14px auto 26px}
+
+footer{background:#080807;border-top:1px solid var(--line);padding:44px 0;font-size:.9rem;color:#8c8576}
+footer .wrap{max-width:1120px}
+footer nav{display:flex;gap:20px;flex-wrap:wrap;margin:14px 0 22px;font-family:var(--cond);text-transform:uppercase;letter-spacing:1px;font-size:.82rem}
+footer nav a{color:#c8c1b0;text-decoration:none}footer nav a:hover{color:var(--amber)}
+footer .disc{font-family:var(--mono);font-size:.72rem;line-height:1.9;color:#6e685b;border-top:1px solid var(--line);padding-top:20px}
+footer .mk{font-family:var(--disp);font-size:1.3rem;text-transform:uppercase}footer .mk b{color:var(--amber)}
