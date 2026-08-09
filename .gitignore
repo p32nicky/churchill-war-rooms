@@ -1,1 +1,5 @@
 .vercel
+gen_guides.py
+build_hub_sitemap.py
+guides_manifest.json
+__pycache__/
