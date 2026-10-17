@@ -27,16 +27,49 @@
 <!-- Structured data -->
 <script type="application/ld+json">
 {
-  "@context":"https://schema.org",
-  "@type":"TouristAttraction",
-  "name":"Churchill War Rooms",
-  "description":"The preserved underground bunker beneath Whitehall where Winston Churchill and his War Cabinet directed Britain through the Second World War, alongside the interactive Churchill Museum.",
-  "image":"https://churchillwarroomstours.com/images/hero-og.jpg",
-  "url":"https://churchillwarroomstours.com/",
-  "address":{"@type":"PostalAddress","streetAddress":"Clive Steps, King Charles Street","addressLocality":"London","postalCode":"SW1A 2AQ","addressCountry":"GB"},
-  "geo":{"@type":"GeoCoordinates","latitude":51.50226,"longitude":-0.12905},
-  "publicAccess":true,
-  "isAccessibleForFree":false
+ "@context": "https://schema.org",
+ "@type": "TouristAttraction",
+ "name": "Churchill War Rooms",
+ "description": "The preserved underground bunker beneath Whitehall where Winston Churchill and his War Cabinet directed Britain through the Second World War, alongside the interactive Churchill Museum.",
+ "image": "https://churchillwarroomstours.com/images/hero-og.jpg",
+ "url": "https://churchillwarroomstours.com/",
+ "address": {
+  "@type": "PostalAddress",
+  "streetAddress": "Clive Steps, King Charles Street",
+  "addressLocality": "London",
+  "postalCode": "SW1A 2AQ",
+  "addressCountry": "GB"
+ },
+ "geo": {
+  "@type": "GeoCoordinates",
+  "latitude": 51.50226,
+  "longitude": -0.12905
+ },
+ "publicAccess": true,
+ "isAccessibleForFree": false,
+ "openingHoursSpecification": [
+  {
+   "@type": "OpeningHoursSpecification",
+   "dayOfWeek": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday"
+   ],
+   "opens": "09:30",
+   "closes": "18:00"
+  },
+  {
+   "@type": "OpeningHoursSpecification",
+   "opens": "00:00",
+   "closes": "00:00",
+   "validFrom": "2026-12-24",
+   "validThrough": "2026-12-26"
+  }
+ ]
 }
 </script>
 <script type="application/ld+json">
