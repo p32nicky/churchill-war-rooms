@@ -3,3 +3,4 @@ gen_guides.py
 build_hub_sitemap.py
 guides_manifest.json
 __pycache__/
+_local_backups/
