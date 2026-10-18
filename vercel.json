@@ -3,8 +3,123 @@
   "trailingSlash": false,
   "redirects": [
     {
+      "source": "/guides/an-evening-in-westminster-after-the-war-rooms",
+      "destination": "/guides/what-to-do-after-the-churchill-war-rooms-in-the-evening",
+      "permanent": true
+    },
+    {
+      "source": "/guides/changing-of-the-guard-near-the-churchill-war-rooms",
+      "destination": "/guides/combining-the-churchill-war-rooms-with-the-changing-of-the-guard",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchill-in-the-first-world-war",
+      "destination": "/guides/winston-churchill-in-the-first-world-war",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchill-war-rooms-bag-policy-what-you-can-and-cant-bring",
+      "destination": "/guides/churchill-war-rooms-bag-policy-and-cloakroom",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchill-war-rooms-cloakroom-and-luggage-storage",
+      "destination": "/guides/churchill-war-rooms-bag-policy-and-cloakroom",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchill-war-rooms-opening-hours-explained",
+      "destination": "/opening-hours",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchill-war-rooms-vs-imperial-war-museum-which-to-visit",
+      "destination": "/guides/churchill-war-rooms-vs-the-imperial-war-museum",
+      "permanent": true
+    },
+    {
+      "source": "/guides/churchills-we-shall-fight-on-the-beaches-speech",
+      "destination": "/guides/we-shall-fight-on-the-beaches-churchills-speech-explained",
+      "permanent": true
+    },
+    {
+      "source": "/guides/do-you-need-to-book-the-churchill-war-rooms-in-advance",
+      "destination": "/guides/do-you-need-to-book-churchill-war-rooms-tickets-in-advance",
+      "permanent": true
+    },
+    {
+      "source": "/guides/downing-street-and-whitehall-a-self-guided-walking-tour",
+      "destination": "/guides/downing-street-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/downing-street-and-whitehall-a-walking-guide",
+      "destination": "/guides/downing-street-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/horse-guards-parade-near-the-churchill-war-rooms",
+      "destination": "/guides/horse-guards-parade-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/is-the-churchill-war-rooms-audio-guide-worth-it",
+      "destination": "/guides/churchill-war-rooms-audio-guide-is-it-worth-it",
+      "permanent": true
+    },
+    {
+      "source": "/guides/is-the-churchill-war-rooms-wheelchair-accessible",
+      "destination": "/guides/churchill-war-rooms-accessibility-guide-for-wheelchair-users",
+      "permanent": true
+    },
+    {
+      "source": "/guides/st-jamess-park-londons-prettiest-royal-park",
+      "destination": "/guides/st-jamess-park-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/st-jamess-park-near-the-churchill-war-rooms",
+      "destination": "/guides/st-jamess-park-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/the-cenotaph-a-quick-guide-near-the-churchill-war-rooms",
+      "destination": "/guides/the-cenotaph-on-whitehall-a-visitors-guide",
+      "permanent": true
+    },
+    {
+      "source": "/guides/the-churchill-statue-in-parliament-square",
+      "destination": "/guides/the-churchill-statue-in-parliament-square-a-quick-guide-near-the-churchill-war-rooms",
+      "permanent": true
+    },
+    {
+      "source": "/guides/the-yalta-and-potsdam-conferences",
+      "destination": "/guides/the-yalta-and-potsdam-conferences-explained",
+      "permanent": true
+    },
+    {
+      "source": "/guides/what-time-does-the-churchill-war-rooms-close",
+      "destination": "/opening-hours",
+      "permanent": true
+    },
+    {
+      "source": "/guides/where-is-winston-churchill-buried",
+      "destination": "/guides/where-winston-churchill-is-buried",
+      "permanent": true
+    },
+    {
+      "source": "/guides/who-was-in-churchills-war-cabinet",
+      "destination": "/guides/churchills-wartime-cabinet-who-was-who",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
-      "has": [{ "type": "host", "value": "www.churchillwarroomstours.com" }],
+      "has": [
+        {
+          "type": "host",
+          "value": "www.churchillwarroomstours.com"
+        }
+      ],
       "destination": "https://churchillwarroomstours.com/$1",
       "permanent": true
     }
